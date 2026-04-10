@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YKS Koç — Gizlilik Politikası</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.8}
+.container{max-width:720px;margin:0 auto;padding:32px 24px}
+h1{font-size:28px;font-weight:800;margin-bottom:4px;color:#1a2234}
+.subtitle{color:#64748b;font-size:14px;margin-bottom:32px}
+h2{font-size:18px;font-weight:700;color:#1a2234;margin:28px 0 12px;padding-top:12px;border-top:1px solid #e2e8f0}
+h2:first-of-type{border-top:none;margin-top:0}
+p{margin-bottom:14px;font-size:15px;color:#334155}
+ul{margin:8px 0 16px 20px}
+li{margin-bottom:8px;font-size:15px;color:#334155}
+strong{color:#1e293b}
+.highlight{background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:16px 0;font-size:14px}
+.footer{margin-top:40px;padding-top:20px;border-top:1px solid #e2e8f0;text-align:center;color:#94a3b8;font-size:13px}
+a{color:#3b82f6}
+@media(max-width:600px){.container{padding:20px 16px}h1{font-size:22px}h2{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🔒 Gizlilik Politikası</h1>
+<p class="subtitle">YKS Koç — Deneme Takip & Akıllı Analiz Uygulaması<br>Son güncelleme: 10 Nisan 2026</p>
+
+<h2>1. Genel Bakış</h2>
+<p>YKS Koç, üniversite sınavına (YKS) hazırlanan öğrenciler için geliştirilmiş bir deneme takip ve analiz uygulamasıdır. Kullanıcı gizliliğine büyük önem veriyoruz.</p>
+
+<div class="highlight">
+<strong>Önemli:</strong> YKS Koç, kişisel verilerinizi herhangi bir sunucuya göndermez. Tüm verileriniz yalnızca cihazınızda (localStorage) saklanır.
+</div>
+
+<h2>2. Toplanan Veriler</h2>
+<p>YKS Koç aşağıdaki verileri <strong>yalnızca cihazınızda</strong> saklar:</p>
+<ul>
+<li><strong>Kullanıcı bilgileri:</strong> Ad ve soyad (giriş için kullanılır, sunucuya gönderilmez)</li>
+<li><strong>Çalışma verileri:</strong> Deneme sonuçları, konu takibi, çalışma süreleri</li>
+<li><strong>Uygulama ayarları:</strong> Hedef net, API anahtarı (kullanıcının kendisi girer)</li>
+</ul>
+
+<h2>3. Kullanılan İzinler</h2>
+
+<p><strong>📷 Kamera İzni</strong></p>
+<p>Deneme sonuç kağıdını fotoğraflamak için kullanılır. Çekilen fotoğraflar yalnızca uygulama içinde sonuçları okumak amacıyla kullanılır ve hiçbir sunucuya yüklenmez. Fotoğraflar cihazda kalıcı olarak saklanmaz.</p>
+
+<p><strong>📁 Dosya Erişimi</strong></p>
+<p>PDF deneme sonuçlarını yüklemek ve veri yedekleme dosyalarını kaydetmek/geri yüklemek için kullanılır. Yüklenen dosyalar yalnızca uygulama içinde işlenir.</p>
+
+<p><strong>🌐 İnternet Erişimi</strong></p>
+<p>Yalnızca aşağıdaki amaçlarla kullanılır:</p>
+<ul>
+<li>Yapay zeka analiz raporu oluşturma (Google Gemini API)</li>
+<li>PDF/fotoğraf içeriğini otomatik okuma (Google Gemini API)</li>
+</ul>
+<p>İnternet erişimi olmadan da uygulamanın temel özellikleri (deneme girişi, konu takibi, çalışma takibi) çalışır.</p>
+
+<h2>4. Üçüncü Taraf Hizmetler</h2>
+<p>YKS Koç, isteğe bağlı olarak <strong>Google Gemini API</strong> hizmetini kullanır. Bu hizmet kullanıcının kendi API anahtarı ile çalışır. Google'ın gizlilik politikası için: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+
+<p>Gemini API'ye gönderilen veriler:</p>
+<ul>
+<li>YZ analiz raporu için: Anonim çalışma istatistikleri (ad/soyad dahil değildir)</li>
+<li>PDF/fotoğraf okuma için: Yüklenen belge içeriği (yalnızca sonuçları çıkarmak amacıyla)</li>
+</ul>
+
+<div class="highlight">
+Gemini API kullanımı tamamen isteğe bağlıdır. API anahtarı girmezseniz bu özellikler devre dışı kalır ve hiçbir veri dışarı gönderilmez.
+</div>
+
+<h2>5. Veri Güvenliği</h2>
+<ul>
+<li>Tüm veriler cihazın yerel depolamasında (localStorage) saklanır</li>
+<li>Hiçbir veri harici sunuculara gönderilmez veya saklanmaz</li>
+<li>API çağrıları HTTPS üzerinden şifreli olarak yapılır</li>
+<li>Kullanıcı istediği zaman tüm verilerini silebilir (Ayarlar → Veri Yönetimi)</li>
+<li>Veri yedekleme/geri yükleme tamamen kullanıcı kontrolündedir</li>
+</ul>
+
+<h2>6. Çocukların Gizliliği</h2>
+<p>YKS Koç, 13 yaş ve üzeri öğrencilere yöneliktir. 13 yaşından küçük çocuklardan bilerek kişisel bilgi toplamayız. Uygulama zaten herhangi bir kişisel bilgiyi sunucuya göndermemektedir.</p>
+
+<h2>7. Reklam ve Analitik</h2>
+<p>YKS Koç:</p>
+<ul>
+<li>Analitik veya izleme aracı kullanmaz</li>
+<li>Kullanıcı davranışlarını takip etmez</li>
+<li>Üçüncü taraflarla veri paylaşmaz</li>
+</ul>
+
+<h2>8. Kullanıcı Hakları</h2>
+<p>Kullanıcılar aşağıdaki haklara sahiptir:</p>
+<ul>
+<li><strong>Veri silme:</strong> Ayarlar → "Tüm Verilerimi Sil" ile tüm veriler silinir</li>
+<li><strong>Veri taşıma:</strong> Ayarlar → "Yedekle" ile veriler dışa aktarılabilir</li>
+<li><strong>Erişimi kaldırma:</strong> Uygulamayı kaldırmak tüm verileri siler</li>
+</ul>
+
+<h2>9. Değişiklikler</h2>
+<p>Bu gizlilik politikası güncellenebilir. Önemli değişiklikler uygulama içinde bildirilecektir.</p>
+
+<h2>10. İletişim</h2>
+<p>Gizlilik ile ilgili sorularınız için:</p>
+<p>📧 E-posta: <a href="mailto:mecinar27@gmail.com">mecinar27@gmail.com</a></p>
+
+<div class="footer">
+<p>YKS Koç © 2026 — Tüm hakları saklıdır.</p>
+<p>Bu gizlilik politikası 10 Nisan 2026 tarihinde yayınlanmıştır.</p>
+</div>
+
+</div>
+</body>
+</html>
