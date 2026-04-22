@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YKS Koç – Yasal Bilgilendirmeler</title>
+<style>
+  :root {
+    --primary: #1565c0;
+    --primary-light: #1976d2;
+    --primary-dark: #0d47a1;
+    --accent: #2196f3;
+    --bg: #e3f2fd;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --text2: #4a4a4a;
+    --text3: #757575;
+    --border: #bbdefb;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--accent));
+    color: white;
+    padding: 32px 20px 28px;
+    text-align: center;
+  }
+  header .emoji { font-size: 48px; margin-bottom: 12px; }
+  header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+  header p { font-size: 13px; opacity: 0.85; }
+  nav {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    background: #e3f2fd;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  nav a:hover { background: var(--primary); color: white; }
+  main { max-width: 800px; margin: 0 auto; padding: 24px 16px 48px; }
+  .section {
+    background: var(--card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .section-header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--accent));
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .section-header h2 { font-size: 16px; font-weight: 700; }
+  .section-header .arrow { font-size: 18px; transition: transform 0.2s; }
+  .section-header.open .arrow { transform: rotate(180deg); }
+  .section-body { padding: 20px; display: none; }
+  .section-body.open { display: block; }
+  h3 { color: var(--primary-dark); font-size: 14px; margin: 18px 0 8px; font-weight: 700; }
+  h4 { color: var(--text2); font-size: 13px; margin: 12px 0 6px; font-weight: 600; }
+  p { margin-bottom: 10px; color: var(--text2); font-size: 14px; }
+  ul { padding-left: 18px; margin-bottom: 10px; }
+  ul li { color: var(--text2); font-size: 14px; margin-bottom: 4px; }
+  .meta {
+    font-size: 12px;
+    color: var(--text3);
+    background: #e3f2fd;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 12px 0;
+  }
+  th {
+    background: #e3f2fd;
+    color: var(--primary-dark);
+    font-weight: 600;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid var(--border);
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    color: var(--text2);
+    vertical-align: top;
+  }
+  .contact-box {
+    background: #e3f2fd;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--primary-dark);
+  }
+  .contact-box strong { display: block; margin-bottom: 4px; }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text3);
+    padding: 24px 16px;
+    border-top: 1px solid var(--border);
+  }
+  .warning-box {
+    background: #fff8e1;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #5d4037;
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="emoji">🎓</div>
+  <h1>YKS Koç</h1>
+  <p>Yasal Bilgilendirmeler ve Gizlilik Politikası</p>
+</header>
+
+<nav>
+  <a href="#gizlilik">Gizlilik Politikası</a>
+  <a href="#kvkk">KVKK Aydınlatma</a>
+  <a href="#kullanim">Kullanım Şartları</a>
+  <a href="#takip">Takip Teknolojileri</a>
+  <a href="#ihlal">Veri İhlali</a>
+</nav>
+
+<main>
+
+  <!-- GİZLİLİK POLİTİKASI -->
+  <div class="section" id="gizlilik">
+    <div class="section-header open" onclick="toggle(this)">
+      <h2>🔒 Gizlilik Politikası</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body open">
+      <div class="meta">Son Güncelleme: 23 Nisan 2026 &nbsp;|&nbsp; Yürürlük: 23 Nisan 2026</div>
+
+      <h3>1. Veri Sorumlusu</h3>
+      <p>YKS Koç uygulaması, bağımsız geliştirici <strong>mecinar27</strong> tarafından sunulmaktadır.</p>
+      <div class="contact-box">
+        <strong>İletişim:</strong>
+        E-posta: mecinar27@gmail.com<br>
+        Konum: Gaziantep, Türkiye
+      </div>
+
+      <h3>2. Toplanan Veriler</h3>
+      <h4>2.1. Sınav ve Çalışma Verileri</h4>
+      <p>Konu takibi, deneme sınav sonuçları, çalışma programı ve ilerleme kayıtları yalnızca cihazınızda yerel olarak saklanır. Bu verilere sunuculardan erişilemez.</p>
+      <h4>2.2. OCR ve Yapay Zeka API Kullanımı</h4>
+      <p>Soru fotoğrafı çekimi ve OCR analizi ile AI koçluk raporu oluşturma özelliklerinde Google Gemini API kullanılmaktadır. Bu işlemler sırasında görüntü ve metin verileriniz Google'ın sunucularına iletilir. Gemini API gizlilik politikası: policies.google.com/privacy</p>
+      <h4>2.3. API Anahtarı</h4>
+      <p>Gemini API kullanımı için girdiğiniz API anahtarı yalnızca cihazınızda şifreli olarak saklanır, sunuculara gönderilmez ve üçüncü taraflarla paylaşılmaz.</p>
+      <h4>2.4. Kullanıcı Hesabı</h4>
+      <p>YKS Koç hesap oluşturma veya kayıt gerektirmez. E-posta, isim, kimlik bilgisi toplanmaz.</p>
+
+      <h3>3. Veri Paylaşımı</h3>
+      <p>Kişisel verileriniz hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya kiralanmaz. Gemini API'ye gönderilen içerikler yalnızca AI işleme amaçlıdır ve Google'ın veri işleme politikasına tabidir.</p>
+
+      <h3>4. Reklam</h3>
+      <p>YKS Koç reklam içermez, reklam SDK'sı kullanmaz ve kullanıcı davranışlarını reklam amaçlı izlemez.</p>
+
+      <h3>5. Veri Güvenliği</h3>
+      <p>Tüm yerel veriler Android'in güvenli depolama alanında saklanır. API çağrıları HTTPS/TLS ile şifrelenerek iletilir.</p>
+
+      <h3>6. Haklarınız</h3>
+      <p>Uygulama verilerinizi Ayarlar → Uygulama Yönetimi → YKS Koç → Veri Temizle yoluyla silebilirsiniz. KVKK talepleriniz için mecinar27@gmail.com adresine başvurabilirsiniz. Başvurular 30 gün içinde yanıtlanır.</p>
+
+      <div class="contact-box">
+        Sorularınız için: <strong>mecinar27@gmail.com</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- KVKK -->
+  <div class="section" id="kvkk">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>📋 KVKK Aydınlatma Metni</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">6698 Sayılı Kişisel Verilerin Korunması Kanunu Uyarınca | Son Güncelleme: 23 Nisan 2026</div>
+
+      <h3>Veri Sorumlusu</h3>
+      <p><strong>Unvan:</strong> mecinar27 (Bağımsız Geliştirici)<br>
+      <strong>E-posta:</strong> mecinar27@gmail.com<br>
+      <strong>Konum:</strong> Gaziantep, Türkiye</p>
+
+      <h3>İşlenen Kişisel Veriler</h3>
+      <table>
+        <tr>
+          <th>Veri Kategorisi</th>
+          <th>İşlenen Veriler</th>
+          <th>Hukuki Sebep</th>
+          <th>Saklama Süresi</th>
+        </tr>
+        <tr>
+          <td>Sınav Verileri</td>
+          <td>Konu takibi, deneme sonuçları, puan tahmini</td>
+          <td>Sözleşmenin İfası</td>
+          <td>Uygulama kaldırılana kadar cihazda</td>
+        </tr>
+        <tr>
+          <td>AI API İçeriği</td>
+          <td>Yüklenen soru görselleri, OCR metni (Gemini API)</td>
+          <td>Açık Rıza</td>
+          <td>Google'ın politikasına tabi; yerel kopya yoktur</td>
+        </tr>
+        <tr>
+          <td>API Anahtarı</td>
+          <td>Kullanıcının kendi Gemini API anahtarı</td>
+          <td>Sözleşmenin İfası</td>
+          <td>Cihazda şifreli – kullanıcı silinceye kadar</td>
+        </tr>
+      </table>
+
+      <h3>KVKK Kapsamındaki Haklarınız</h3>
+      <ul>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+        <li>İşlenmişse bilgi talep etme</li>
+        <li>Yanlış işlenmişse düzeltilmesini isteme</li>
+        <li>Koşullar oluştuğunda silinmesini talep etme</li>
+        <li>İşlemeye itiraz etme</li>
+        <li>Zararın giderilmesini talep etme</li>
+      </ul>
+
+      <h3>Yurt Dışı Veri Aktarımı</h3>
+      <p>Gemini API kullanımı kapsamında veriler Google LLC (ABD) sunucularında işlenebilir. Bu aktarım KVKK'nın 9. maddesi kapsamında uygun güvenlik önlemleri alınarak gerçekleştirilir.</p>
+
+      <h3>Başvuru Yöntemi</h3>
+      <p>Haklarınızı kullanmak için <strong>mecinar27@gmail.com</strong> adresine başvurabilirsiniz. Başvurular 30 gün içinde ücretsiz yanıtlanır.</p>
+    </div>
+  </div>
+
+  <!-- KULLANIM ŞARTLARI -->
+  <div class="section" id="kullanim">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>📄 Kullanım Şartları</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">Son Güncelleme: 23 Nisan 2026</div>
+
+      <h3>1. Taraflar ve Kapsam</h3>
+      <p>Bu kullanım şartları, <strong>YKS Koç</strong> uygulamasını sunan mecinar27 (Geliştirici) ile uygulamayı kullanan kişi (Kullanıcı) arasında geçerlidir. Uygulamayı indirerek bu şartları kabul etmiş sayılırsınız.</p>
+
+      <h3>2. Uygulamanın Amacı</h3>
+      <p>YKS Koç; YKS sınavına hazırlanan öğrencilere konu takibi, deneme analizi, AI destekli koçluk raporu ve çalışma planı özellikleri sunan ücretsiz bir yardımcı araçtır.</p>
+
+      <h3>3. Yapay Zeka ve Sınav Sonuçları</h3>
+      <div class="warning-box">
+        ⚠️ YKS Koç tarafından üretilen AI raporları, puan tahminleri ve koçluk önerileri yalnızca yardımcı bilgi niteliğindedir. Kesin sınav sonuçlarını garanti etmez. Uygulama sonuçlarına dayanarak alınan kararların sorumluluğu kullanıcıya aittir.
+      </div>
+
+      <h3>4. Gemini API Kullanımı</h3>
+      <p>Uygulamadaki AI özellikleri için kullanıcının kendi Google Gemini API anahtarını girmesi gerekebilir. Bu anahtarın güvenliği kullanıcının sorumluluğundadır. API kullanım ücretleri doğrudan Google tarafından tahsil edilir; geliştirici bu konuda sorumluluk kabul etmez.</p>
+
+      <h3>5. Kullanım Koşulları</h3>
+      <ul>
+        <li>Uygulama yalnızca kişisel ve eğitim amaçlı kullanılabilir.</li>
+        <li>Ticari lisans olmaksızın içerik kopyalanamaz veya dağıtılamaz.</li>
+        <li>Uygulamanın tersine mühendislik ile çözülmesi yasaktır.</li>
+      </ul>
+
+      <h3>6. Sorumluluk Sınırları</h3>
+      <p>Uygulama "olduğu gibi" sunulmaktadır. OCR hataları, API kesintileri veya yanlış puan tahminlerinden doğan zararlardan geliştirici sorumlu tutulamaz.</p>
+
+      <h3>7. Fikri Mülkiyet</h3>
+      <p>YKS Koç'un tüm tasarım ve yazılım bileşenleri mecinar27'ye aittir. Sınav soruları ve müfredat bilgileri kamu kaynaklarından derlenmiştir.</p>
+
+      <h3>8. Uygulanacak Hukuk</h3>
+      <p>Bu şartlar Türk Hukuku'na tabidir. Uyuşmazlıklarda Gaziantep mahkemeleri ve tüketici hakem heyetleri yetkilidir.</p>
+
+      <div class="contact-box">
+        İletişim: <strong>mecinar27@gmail.com</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAKİP TEKNOLOJİLERİ -->
+  <div class="section" id="takip">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>📡 Takip Teknolojileri Politikası</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">Son Güncelleme: 23 Nisan 2026</div>
+
+      <h3>Kullanılan Teknolojiler</h3>
+      <p>YKS Koç herhangi bir reklam SDK'sı, analitik izleme aracı veya kullanıcı takip teknolojisi kullanmaz. Uygulama içinde reklam gösterilmez.</p>
+
+      <h4>Harici Servis: Google Gemini API</h4>
+      <p>OCR ve AI koçluk özellikleri için Gemini API kullanılır. API çağrıları sırasında görüntü ve metin içerikleri Google sunucularına iletilir. İşleme süreci Google'ın gizlilik politikasına tabidir.</p>
+
+      <h3>Yerel Depolama</h3>
+      <p>Tüm sınav verileri, konu takibi ve ayarlar Android'in yerel SharedPreferences ve Room veritabanında tutulur. Bulut senkronizasyonu yapılmaz.</p>
+
+      <h3>Kamera ve Galeri</h3>
+      <p>OCR özelliği için kamera ve galeri izni istenir. Çekilen fotoğraflar yalnızca metin çıkarma (OCR) işlemi için Gemini API'ye iletilir; cihazda veya sunucularda ayrıca saklanmaz.</p>
+
+      <h3>Kontrol ve Tercihler</h3>
+      <ul>
+        <li>Kamera izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç</li>
+        <li>Depolama izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç</li>
+        <li>Tüm uygulama verisi: Ayarlar → Uygulama Yönetimi → Veri Temizle</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- VERİ İHLALİ -->
+  <div class="section" id="ihlal">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>🛡️ Veri İhlali Bildirimi</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">Son Güncelleme: 23 Nisan 2026</div>
+
+      <h3>Risk Değerlendirmesi</h3>
+      <p>YKS Koç sunucu tabanlı kullanıcı verisi barındırmadığından, geleneksel anlamda sunucu taraflı veri ihlali riski yoktur. Kullanıcı verileri tamamen cihazda yerel olarak saklanır.</p>
+
+      <h3>Olası Riskler</h3>
+      <ul>
+        <li>Cihaza fiziksel yetkisiz erişim</li>
+        <li>Gemini API üzerinden Google kaynaklı veri ihlali</li>
+        <li>Kullanıcının API anahtarının başka uygulamalara sızdırılması</li>
+      </ul>
+
+      <h3>Bildirim Süreci</h3>
+      <p>Bir ihlal tespit edilmesi durumunda etkilenen kullanıcılar mümkün olan en kısa sürede bilgilendirilir, KVKK'ya gerekli sürede bildirim yapılır ve güvenlik güncellemesi yayınlanır.</p>
+
+      <h3>Güvenlik Bildirimi</h3>
+      <div class="contact-box">
+        <strong>Güvenlik Açığı Bildirimi:</strong> mecinar27@gmail.com<br>
+        Konu: Güvenlik Açığı – YKS Koç<br>
+        Yanıt süresi: 48 saat
+      </div>
+
+      <h3>KVKK İletişim</h3>
+      <div class="contact-box">
+        <strong>Kişisel Verileri Koruma Kurumu</strong><br>
+        Necatibey Cad. No:114 Sıhhiye/Çankaya/ANKARA<br>
+        Tel: +90 312 967 88 00 | Web: www.kvkk.gov.tr
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 mecinar27. Tüm hakları saklıdır.</p>
+  <p style="margin-top:6px">Bu belgeler YKS Koç uygulaması için geçerlidir.</p>
+  <p style="margin-top:6px">İletişim: mecinar27@gmail.com</p>
+</footer>
+
+<script>
+  function toggle(header) {
+    header.classList.toggle('open');
+    const body = header.nextElementSibling;
+    body.classList.toggle('open');
+  }
+  document.querySelectorAll('.section-body').forEach((b, i) => {
+    if (i === 0) b.classList.add('open');
+  });
+</script>
+</body>
+</html>
