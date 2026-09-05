@@ -168,7 +168,7 @@
       <span class="arrow">▾</span>
     </div>
     <div class="section-body open">
-      <div class="meta">Son Güncelleme: 23 Nisan 2026 &nbsp;|&nbsp; Yürürlük: 23 Nisan 2026</div>
+      <div class="meta">Son Güncelleme: 6 Eylül 2026 &nbsp;|&nbsp; Yürürlük: 6 Eylül 2026</div>
 
       <h3>1. Veri Sorumlusu</h3>
       <p>YKS Koç uygulaması, bağımsız geliştirici <strong>mecinar27</strong> tarafından sunulmaktadır.</p>
@@ -181,24 +181,41 @@
       <h3>2. Toplanan Veriler</h3>
       <h4>2.1. Sınav ve Çalışma Verileri</h4>
       <p>Konu takibi, deneme sınav sonuçları, çalışma programı ve ilerleme kayıtları yalnızca cihazınızda yerel olarak saklanır. Bu verilere sunuculardan erişilemez.</p>
-      <h4>2.2. OCR ve Yapay Zeka API Kullanımı</h4>
-      <p>Soru fotoğrafı çekimi ve OCR analizi ile AI koçluk raporu oluşturma özelliklerinde Google Gemini API kullanılmaktadır. Bu işlemler sırasında görüntü ve metin verileriniz Google'ın sunucularına iletilir. Gemini API gizlilik politikası: policies.google.com/privacy</p>
-      <h4>2.3. API Anahtarı</h4>
-      <p>Gemini API kullanımı için girdiğiniz API anahtarı yalnızca cihazınızda şifreli olarak saklanır, sunuculara gönderilmez ve üçüncü taraflarla paylaşılmaz.</p>
-      <h4>2.4. Kullanıcı Hesabı</h4>
-      <p>YKS Koç hesap oluşturma veya kayıt gerektirmez. E-posta, isim, kimlik bilgisi toplanmaz.</p>
+      <h4>2.2. OCR ve Yapay Zeka Kullanımı</h4>
+      <p>Deneme sonucu fotoğrafı/PDF okuma (OCR) ve yapay zeka analiz raporu özelliklerinde Google Gemini altyapısı kullanılmaktadır. İstekler, geliştiricinin aracı sunucusu (proxy) üzerinden Google'a iletilir; kullanıcıdan herhangi bir API anahtarı istenmez. Bu işlemler sırasında yüklediğiniz görüntü ve anonim çalışma/deneme istatistikleriniz Google'ın sunucularına iletilir. <strong>Ad-soyad bilginiz yapay zeka isteklerine dahil edilmez.</strong> Yapay zeka sorguları günlük 10 adet ile sınırlıdır. Gemini gizlilik politikası: policies.google.com/privacy</p>
+      <h4>2.3. Kullanıcı Profili</h4>
+      <p>Uygulama, cihaz içi profil oluşturmak için ad-soyad ister. Bu bilgi <strong>yalnızca cihazınızda</strong> saklanır; hiçbir sunucuya gönderilmez, hesap kaydı veya e-posta doğrulaması yapılmaz.</p>
+      <h4>2.4. Satın Alma Verileri</h4>
+      <p>Premium abonelik ve satın almalar Google Play Faturalandırma sistemi üzerinden gerçekleştirilir. Ödeme bilgileriniz (kart vb.) geliştirici tarafından görülmez ve saklanmaz; tüm ödeme süreci Google Play tarafından yönetilir. Uygulama yalnızca satın almanın aktif olup olmadığı bilgisini tutar.</p>
 
       <h3>3. Veri Paylaşımı</h3>
-      <p>Kişisel verileriniz hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya kiralanmaz. Gemini API'ye gönderilen içerikler yalnızca AI işleme amaçlıdır ve Google'ın veri işleme politikasına tabidir.</p>
+      <p>Kişisel verileriniz hiçbir üçüncü tarafla ticari amaçla paylaşılmaz, satılmaz veya kiralanmaz. Gemini'ye gönderilen içerikler yalnızca yapay zeka işleme amaçlıdır ve Google'ın veri işleme politikasına tabidir. Google Play Faturalandırma yalnızca satın alma işlevleri, Google AdMob yalnızca ücretsiz sürümde reklam gösterimi için kullanılır.</p>
 
-      <h3>4. Reklam</h3>
-      <p>YKS Koç reklam içermez, reklam SDK'sı kullanmaz ve kullanıcı davranışlarını reklam amaçlı izlemez.</p>
+      <h3>4. Premium Abonelik ve Ücretsiz Deneme</h3>
+      <p>YKS Koç, temel özellikleri ücretsiz sunar. Yapay zeka analiz, otomatik okuma (OCR) ve günlük mini test özellikleri <strong>3 günlük ücretsiz deneme</strong> süresince serbestçe kullanılır. Deneme süresi bittikten sonra bu özellikler iki şekilde kullanılabilir: <strong>(1)</strong> isteğe bağlı ödüllü reklam izleyerek kullanım hakkı kazanarak (ücretsiz) veya <strong>(2)</strong> Premium üyelikle reklamsız ve sınırsız erişerek. Yapay zeka sorguları her durumda günlük 10 adet ile sınırlıdır.</p>
+      <ul>
+        <li><strong>Aylık plan:</strong> aylık olarak otomatik yenilenir.</li>
+        <li><strong>Yıllık plan:</strong> yıllık olarak otomatik yenilenir.</li>
+        <li><strong>Ömür boyu plan:</strong> tek seferlik ödemedir, yenilenmez.</li>
+        <li>Abonelikler Google Play hesabınız üzerinden yönetilir; <strong>Google Play → Ödemeler ve Abonelikler</strong> bölümünden istediğiniz an iptal edebilirsiniz.</li>
+        <li>İptal, mevcut fatura döneminin sonunda geçerli olur; kısmi iade Google Play iade politikasına tabidir.</li>
+        <li>Satın almalar Google hesabınıza bağlıdır; cihaz değişiminde "Satın Alımları Geri Yükle" ile premium hakkınız korunur.</li>
+      </ul>
 
-      <h3>5. Veri Güvenliği</h3>
-      <p>Tüm yerel veriler Android'in güvenli depolama alanında saklanır. API çağrıları HTTPS/TLS ile şifrelenerek iletilir.</p>
+      <h3>5. Reklamlar (Ücretsiz Sürüm)</h3>
+      <p>Ücretsiz sürümde Google AdMob altyapısıyla reklam gösterilir:</p>
+      <ul>
+        <li><strong>Banner reklam:</strong> ekranın altında görüntülenir.</li>
+        <li><strong>Ödüllü reklam:</strong> yalnızca kullanıcının isteğiyle başlatılır; izlenmesi karşılığında YZ analiz, otomatik okuma veya günlük mini test gibi özellikler açılır. Zorunlu reklam izletilmez.</li>
+        <li>AdMob, reklamları kişiselleştirmek amacıyla cihazın reklam kimliğini (Advertising ID) kullanabilir. Tercihler: Android Ayarlar → Google → Reklamlar.</li>
+        <li><strong>Premium üyelik tüm reklamları kaldırır.</strong></li>
+      </ul>
 
-      <h3>6. Haklarınız</h3>
-      <p>Uygulama verilerinizi Ayarlar → Uygulama Yönetimi → YKS Koç → Veri Temizle yoluyla silebilirsiniz. KVKK talepleriniz için mecinar27@gmail.com adresine başvurabilirsiniz. Başvurular 30 gün içinde yanıtlanır.</p>
+      <h3>6. Veri Güvenliği</h3>
+      <p>Tüm yerel veriler Android'in uygulama korumalı depolama alanında saklanır. API çağrıları HTTPS/TLS ile şifrelenerek iletilir.</p>
+
+      <h3>7. Haklarınız</h3>
+      <p>Uygulama verilerinizi uygulama içinden Ayarlar → Tüm Verilerimi Sil yoluyla veya cihazınızın Ayarlar → Uygulamalar → YKS Koç → Veri Temizle yoluyla silebilirsiniz. KVKK talepleriniz için mecinar27@gmail.com adresine başvurabilirsiniz. Başvurular 30 gün içinde yanıtlanır.</p>
 
       <div class="contact-box">
         Sorularınız için: <strong>mecinar27@gmail.com</strong>
@@ -213,7 +230,7 @@
       <span class="arrow">▾</span>
     </div>
     <div class="section-body">
-      <div class="meta">6698 Sayılı Kişisel Verilerin Korunması Kanunu Uyarınca | Son Güncelleme: 23 Nisan 2026</div>
+      <div class="meta">6698 Sayılı Kişisel Verilerin Korunması Kanunu Uyarınca | Son Güncelleme: 6 Eylül 2026</div>
 
       <h3>Veri Sorumlusu</h3>
       <p><strong>Unvan:</strong> mecinar27 (Bağımsız Geliştirici)<br>
@@ -235,16 +252,28 @@
           <td>Uygulama kaldırılana kadar cihazda</td>
         </tr>
         <tr>
-          <td>AI API İçeriği</td>
-          <td>Yüklenen soru görselleri, OCR metni (Gemini API)</td>
+          <td>AI İçeriği</td>
+          <td>Yüklenen deneme sonucu görselleri, anonim çalışma istatistikleri (Gemini)</td>
           <td>Açık Rıza</td>
           <td>Google'ın politikasına tabi; yerel kopya yoktur</td>
         </tr>
         <tr>
-          <td>API Anahtarı</td>
-          <td>Kullanıcının kendi Gemini API anahtarı</td>
+          <td>Profil Verisi</td>
+          <td>Ad-soyad (yalnızca cihaz içi profil için)</td>
           <td>Sözleşmenin İfası</td>
-          <td>Cihazda şifreli – kullanıcı silinceye kadar</td>
+          <td>Cihazda – kullanıcı silinceye kadar; sunucuya gönderilmez</td>
+        </tr>
+        <tr>
+          <td>Satın Alma Verisi</td>
+          <td>Abonelik/satın alma durumu (Google Play Faturalandırma)</td>
+          <td>Sözleşmenin İfası</td>
+          <td>Google Play politikasına tabi; ödeme bilgisi geliştiriciye ulaşmaz</td>
+        </tr>
+        <tr>
+          <td>Reklam Verisi</td>
+          <td>Reklam kimliği (Advertising ID), reklam etkileşimi (AdMob — yalnızca ücretsiz sürüm)</td>
+          <td>Meşru Menfaat / Açık Rıza</td>
+          <td>Google AdMob politikasına tabi; Premium'da reklam gösterilmez</td>
         </tr>
       </table>
 
@@ -273,36 +302,45 @@
       <span class="arrow">▾</span>
     </div>
     <div class="section-body">
-      <div class="meta">Son Güncelleme: 23 Nisan 2026</div>
+      <div class="meta">Son Güncelleme: 6 Eylül 2026</div>
 
       <h3>1. Taraflar ve Kapsam</h3>
       <p>Bu kullanım şartları, <strong>YKS Koç</strong> uygulamasını sunan mecinar27 (Geliştirici) ile uygulamayı kullanan kişi (Kullanıcı) arasında geçerlidir. Uygulamayı indirerek bu şartları kabul etmiş sayılırsınız.</p>
 
       <h3>2. Uygulamanın Amacı</h3>
-      <p>YKS Koç; YKS sınavına hazırlanan öğrencilere konu takibi, deneme analizi, AI destekli koçluk raporu ve çalışma planı özellikleri sunan ücretsiz bir yardımcı araçtır.</p>
+      <p>YKS Koç; YKS sınavına hazırlanan öğrencilere konu takibi, deneme analizi, AI destekli koçluk raporu ve çalışma planı özellikleri sunan bir yardımcı araçtır. Temel özellikler ücretsizdir; yapay zeka analiz, otomatik okuma (OCR) ve günlük mini test özellikleri 3 günlük ücretsiz denemenin ardından Premium üyelik gerektirir.</p>
 
       <h3>3. Yapay Zeka ve Sınav Sonuçları</h3>
       <div class="warning-box">
         ⚠️ YKS Koç tarafından üretilen AI raporları, puan tahminleri ve koçluk önerileri yalnızca yardımcı bilgi niteliğindedir. Kesin sınav sonuçlarını garanti etmez. Uygulama sonuçlarına dayanarak alınan kararların sorumluluğu kullanıcıya aittir.
       </div>
 
-      <h3>4. Gemini API Kullanımı</h3>
-      <p>Uygulamadaki AI özellikleri için kullanıcının kendi Google Gemini API anahtarını girmesi gerekebilir. Bu anahtarın güvenliği kullanıcının sorumluluğundadır. API kullanım ücretleri doğrudan Google tarafından tahsil edilir; geliştirici bu konuda sorumluluk kabul etmez.</p>
+      <h3>4. Premium Üyelik, Ödeme ve İptal</h3>
+      <ul>
+        <li>Premium planlar (aylık, yıllık, ömür boyu) Google Play Faturalandırma üzerinden satın alınır; fiyatlar satın alma ekranında gösterilir.</li>
+        <li>Aylık ve yıllık planlar, iptal edilmediği sürece dönem sonunda otomatik yenilenir. Ömür boyu plan tek seferlik ödemedir.</li>
+        <li>İptal işlemi Google Play → Ödemeler ve Abonelikler bölümünden yapılır; iptal mevcut dönemin sonunda geçerli olur.</li>
+        <li>İadeler Google Play iade politikasına tabidir.</li>
+        <li>Yapay zeka sorguları, plan türünden bağımsız olarak günlük 10 adet ile sınırlıdır; bu limit hizmetin sürdürülebilirliği için uygulanır ve değiştirilebilir.</li>
+      </ul>
 
-      <h3>5. Kullanım Koşulları</h3>
+      <h3>5. Yapay Zeka Altyapısı</h3>
+      <p>AI özellikleri, geliştiricinin aracı sunucusu üzerinden Google Gemini altyapısını kullanır. Kullanıcıdan API anahtarı istenmez. Hizmet, Google altyapısındaki kesinti veya değişikliklerden etkilenebilir; geliştirici kesintisiz hizmet garantisi vermez.</p>
+
+      <h3>6. Kullanım Koşulları</h3>
       <ul>
         <li>Uygulama yalnızca kişisel ve eğitim amaçlı kullanılabilir.</li>
         <li>Ticari lisans olmaksızın içerik kopyalanamaz veya dağıtılamaz.</li>
         <li>Uygulamanın tersine mühendislik ile çözülmesi yasaktır.</li>
       </ul>
 
-      <h3>6. Sorumluluk Sınırları</h3>
-      <p>Uygulama "olduğu gibi" sunulmaktadır. OCR hataları, API kesintileri veya yanlış puan tahminlerinden doğan zararlardan geliştirici sorumlu tutulamaz.</p>
+      <h3>7. Sorumluluk Sınırları</h3>
+      <p>Uygulama "olduğu gibi" sunulmaktadır. OCR hataları, API kesintileri veya yanlış puan/sıralama tahminlerinden doğan zararlardan geliştirici sorumlu tutulamaz.</p>
 
-      <h3>7. Fikri Mülkiyet</h3>
+      <h3>8. Fikri Mülkiyet</h3>
       <p>YKS Koç'un tüm tasarım ve yazılım bileşenleri mecinar27'ye aittir. Sınav soruları ve müfredat bilgileri kamu kaynaklarından derlenmiştir.</p>
 
-      <h3>8. Uygulanacak Hukuk</h3>
+      <h3>9. Uygulanacak Hukuk</h3>
       <p>Bu şartlar Türk Hukuku'na tabidir. Uyuşmazlıklarda Gaziantep mahkemeleri ve tüketici hakem heyetleri yetkilidir.</p>
 
       <div class="contact-box">
@@ -318,24 +356,43 @@
       <span class="arrow">▾</span>
     </div>
     <div class="section-body">
-      <div class="meta">Son Güncelleme: 23 Nisan 2026</div>
+      <div class="meta">Son Güncelleme: 6 Eylül 2026</div>
 
       <h3>Kullanılan Teknolojiler</h3>
-      <p>YKS Koç herhangi bir reklam SDK'sı, analitik izleme aracı veya kullanıcı takip teknolojisi kullanmaz. Uygulama içinde reklam gösterilmez.</p>
+      <p>YKS Koç; reklam için Google AdMob, ödemeler için Google Play Faturalandırma ve yapay zeka için Google Gemini kullanır. Analitik izleme veya kullanıcı profilleme amacıyla başka bir SDK kullanılmaz.</p>
 
-      <h4>Harici Servis: Google Gemini API</h4>
-      <p>OCR ve AI koçluk özellikleri için Gemini API kullanılır. API çağrıları sırasında görüntü ve metin içerikleri Google sunucularına iletilir. İşleme süreci Google'ın gizlilik politikasına tabidir.</p>
+      <h4>Harici Servis 1: Google AdMob (yalnızca ücretsiz sürüm)</h4>
+      <p>Banner ve ödüllü reklamların gösterimi için kullanılır. AdMob, reklam kişiselleştirmesi amacıyla cihazın Advertising ID'sini kullanabilir. Ödüllü reklamlar yalnızca kullanıcının isteğiyle başlatılır. Premium üyelikte reklam gösterilmez. Tercih yönetimi: Ayarlar → Google → Reklamlar.</p>
+
+      <h4>Harici Servis 2: Google Play Faturalandırma</h4>
+      <p>Premium abonelik ve satın almaların işlenmesi için kullanılır. Ödeme süreci tamamen Google Play tarafından yürütülür; geliştirici ödeme bilgilerine erişemez. Satın alma durumu Google hesabınıza bağlıdır.</p>
+
+      <h4>Harici Servis 3: Google Gemini (geliştirici proxy'si üzerinden)</h4>
+      <p>OCR ve AI koçluk özellikleri için Gemini altyapısı kullanılır. Çağrılar sırasında yüklenen görüntü ve anonim istatistik içerikleri Google sunucularına iletilir; ad-soyad gönderilmez. İşleme süreci Google'ın gizlilik politikasına tabidir.</p>
 
       <h3>Yerel Depolama</h3>
-      <p>Tüm sınav verileri, konu takibi ve ayarlar Android'in yerel SharedPreferences ve Room veritabanında tutulur. Bulut senkronizasyonu yapılmaz.</p>
+      <p>Tüm sınav verileri, konu takibi ve ayarlar cihaz içi uygulama depolamasında tutulur. Bulut senkronizasyonu yapılmaz.</p>
 
       <h3>Kamera ve Galeri</h3>
       <p>OCR özelliği için kamera ve galeri izni istenir. Çekilen fotoğraflar yalnızca metin çıkarma (OCR) işlemi için Gemini API'ye iletilir; cihazda veya sunucularda ayrıca saklanmaz.</p>
+
+      <h3>Bildirimler</h3>
+      <p>Uygulama, çalışma hatırlatıcısı ve seri (streak) kaybetme uyarısı gönderebilmek için bildirim izni ister. Bildirimler <strong>tamamen cihaz üzerinde</strong> oluşturulur ve zamanlanır; sunucudan gönderilmez (push bildirim kullanılmaz). Bildirim içerikleri hiçbir yere iletilmez, üçüncü taraflarla paylaşılmaz.</p>
+      <ul>
+        <li><strong>Bildirim izni:</strong> hatırlatıcı ve seri uyarısı için kullanılır; reddedilebilir, uygulama izinsiz de çalışır.</li>
+        <li><strong>Alarm/zamanlama izni:</strong> hatırlatıcının seçtiğiniz saatte çalışması için gereklidir.</li>
+        <li><strong>Cihaz açılışı izni:</strong> telefon yeniden başlatıldığında kurulu hatırlatıcıların korunmasını sağlar.</li>
+      </ul>
+
+      <h3>Sonuç Paylaşımı</h3>
+      <p>Deneme ve mini test sonuçlarınızı paylaşma özelliği yalnızca sizin isteğinizle çalışır. Paylaşım, cihazın kendi paylaşım menüsü üzerinden yapılır; içerik geliştiriciye veya herhangi bir sunucuya gönderilmez, kayıt altına alınmaz.</p>
 
       <h3>Kontrol ve Tercihler</h3>
       <ul>
         <li>Kamera izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç</li>
         <li>Depolama izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç</li>
+        <li>Bildirim izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç → Bildirimler</li>
+        <li>Hatırlatıcıyı kapatma: Uygulama içi Ayarlar → 🔕 Hatırlatıcıyı Kapat</li>
         <li>Tüm uygulama verisi: Ayarlar → Uygulama Yönetimi → Veri Temizle</li>
       </ul>
     </div>
@@ -348,7 +405,7 @@
       <span class="arrow">▾</span>
     </div>
     <div class="section-body">
-      <div class="meta">Son Güncelleme: 23 Nisan 2026</div>
+      <div class="meta">Son Güncelleme: 6 Eylül 2026</div>
 
       <h3>Risk Değerlendirmesi</h3>
       <p>YKS Koç sunucu tabanlı kullanıcı verisi barındırmadığından, geleneksel anlamda sunucu taraflı veri ihlali riski yoktur. Kullanıcı verileri tamamen cihazda yerel olarak saklanır.</p>
@@ -356,8 +413,8 @@
       <h3>Olası Riskler</h3>
       <ul>
         <li>Cihaza fiziksel yetkisiz erişim</li>
-        <li>Gemini API üzerinden Google kaynaklı veri ihlali</li>
-        <li>Kullanıcının API anahtarının başka uygulamalara sızdırılması</li>
+        <li>Gemini altyapısı üzerinden Google kaynaklı veri ihlali</li>
+        <li>Google Play Faturalandırma altyapısında Google kaynaklı bir güvenlik olayı</li>
       </ul>
 
       <h3>Bildirim Süreci</h3>
