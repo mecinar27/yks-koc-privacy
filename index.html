@@ -3,115 +3,456 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YKS Koç — Gizlilik Politikası</title>
+<title>YKS Koç – Yasal Bilgilendirmeler</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.8}
-.container{max-width:720px;margin:0 auto;padding:32px 24px}
-h1{font-size:28px;font-weight:800;margin-bottom:4px;color:#1a2234}
-.subtitle{color:#64748b;font-size:14px;margin-bottom:32px}
-h2{font-size:18px;font-weight:700;color:#1a2234;margin:28px 0 12px;padding-top:12px;border-top:1px solid #e2e8f0}
-h2:first-of-type{border-top:none;margin-top:0}
-p{margin-bottom:14px;font-size:15px;color:#334155}
-ul{margin:8px 0 16px 20px}
-li{margin-bottom:8px;font-size:15px;color:#334155}
-strong{color:#1e293b}
-.highlight{background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 18px;border-radius:8px;margin:16px 0;font-size:14px}
-.footer{margin-top:40px;padding-top:20px;border-top:1px solid #e2e8f0;text-align:center;color:#94a3b8;font-size:13px}
-a{color:#3b82f6}
-@media(max-width:600px){.container{padding:20px 16px}h1{font-size:22px}h2{font-size:16px}}
+  :root {
+    --primary: #1565c0;
+    --primary-light: #1976d2;
+    --primary-dark: #0d47a1;
+    --accent: #2196f3;
+    --bg: #e3f2fd;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --text2: #4a4a4a;
+    --text3: #757575;
+    --border: #bbdefb;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--accent));
+    color: white;
+    padding: 32px 20px 28px;
+    text-align: center;
+  }
+  header .emoji { font-size: 48px; margin-bottom: 12px; }
+  header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+  header p { font-size: 13px; opacity: 0.85; }
+  nav {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    background: #e3f2fd;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  nav a:hover { background: var(--primary); color: white; }
+  main { max-width: 800px; margin: 0 auto; padding: 24px 16px 48px; }
+  .section {
+    background: var(--card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .section-header {
+    background: linear-gradient(135deg, var(--primary-dark), var(--accent));
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .section-header h2 { font-size: 16px; font-weight: 700; }
+  .section-header .arrow { font-size: 18px; transition: transform 0.2s; }
+  .section-header.open .arrow { transform: rotate(180deg); }
+  .section-body { padding: 20px; display: none; }
+  .section-body.open { display: block; }
+  h3 { color: var(--primary-dark); font-size: 14px; margin: 18px 0 8px; font-weight: 700; }
+  h4 { color: var(--text2); font-size: 13px; margin: 12px 0 6px; font-weight: 600; }
+  p { margin-bottom: 10px; color: var(--text2); font-size: 14px; }
+  ul { padding-left: 18px; margin-bottom: 10px; }
+  ul li { color: var(--text2); font-size: 14px; margin-bottom: 4px; }
+  .meta {
+    font-size: 12px;
+    color: var(--text3);
+    background: #e3f2fd;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 12px 0;
+  }
+  th {
+    background: #e3f2fd;
+    color: var(--primary-dark);
+    font-weight: 600;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid var(--border);
+  }
+  td {
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    color: var(--text2);
+    vertical-align: top;
+  }
+  .contact-box {
+    background: #e3f2fd;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--primary-dark);
+  }
+  .contact-box strong { display: block; margin-bottom: 4px; }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text3);
+    padding: 24px 16px;
+    border-top: 1px solid var(--border);
+  }
+  .warning-box {
+    background: #fff8e1;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #5d4037;
+    margin: 10px 0;
+  }
 </style>
 </head>
 <body>
-<div class="container">
 
-<h1>🔒 Gizlilik Politikası</h1>
-<p class="subtitle">YKS Koç — Deneme Takip & Akıllı Analiz Uygulaması<br>Son güncelleme: 10 Nisan 2026</p>
+<header>
+  <div class="emoji">🎓</div>
+  <h1>YKS Koç</h1>
+  <p>Yasal Bilgilendirmeler ve Gizlilik Politikası</p>
+</header>
 
-<h2>1. Genel Bakış</h2>
-<p>YKS Koç, üniversite sınavına (YKS) hazırlanan öğrenciler için geliştirilmiş bir deneme takip ve analiz uygulamasıdır. Kullanıcı gizliliğine büyük önem veriyoruz.</p>
+<nav>
+  <a href="#gizlilik">Gizlilik Politikası</a>
+  <a href="#kvkk">KVKK Aydınlatma</a>
+  <a href="#kullanim">Kullanım Şartları</a>
+  <a href="#takip">Takip Teknolojileri</a>
+  <a href="#ihlal">Veri İhlali</a>
+</nav>
 
-<div class="highlight">
-<strong>Önemli:</strong> YKS Koç, kişisel verilerinizi herhangi bir sunucuya göndermez. Tüm verileriniz yalnızca cihazınızda (localStorage) saklanır.
-</div>
+<main>
 
-<h2>2. Toplanan Veriler</h2>
-<p>YKS Koç aşağıdaki verileri <strong>yalnızca cihazınızda</strong> saklar:</p>
-<ul>
-<li><strong>Kullanıcı bilgileri:</strong> Ad ve soyad (giriş için kullanılır, sunucuya gönderilmez)</li>
-<li><strong>Çalışma verileri:</strong> Deneme sonuçları, konu takibi, çalışma süreleri</li>
-<li><strong>Uygulama ayarları:</strong> Hedef net, API anahtarı (kullanıcının kendisi girer)</li>
-</ul>
+  <!-- GİZLİLİK POLİTİKASI -->
+  <div class="section" id="gizlilik">
+    <div class="section-header open" onclick="toggle(this)">
+      <h2>🔒 Gizlilik Politikası</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body open">
+      <div class="meta">Son Güncelleme: 6 Eylül 2026 &nbsp;|&nbsp; Yürürlük: 6 Eylül 2026</div>
 
-<h2>3. Kullanılan İzinler</h2>
+      <h3>1. Veri Sorumlusu</h3>
+      <p>YKS Koç uygulaması, bağımsız geliştirici <strong>mecinar27</strong> tarafından sunulmaktadır.</p>
+      <div class="contact-box">
+        <strong>İletişim:</strong>
+        E-posta: mecinar27@gmail.com<br>
+        Konum: Gaziantep, Türkiye
+      </div>
 
-<p><strong>📷 Kamera İzni</strong></p>
-<p>Deneme sonuç kağıdını fotoğraflamak için kullanılır. Çekilen fotoğraflar yalnızca uygulama içinde sonuçları okumak amacıyla kullanılır ve hiçbir sunucuya yüklenmez. Fotoğraflar cihazda kalıcı olarak saklanmaz.</p>
+      <h3>2. Toplanan Veriler</h3>
+      <h4>2.1. Sınav ve Çalışma Verileri</h4>
+      <p>Konu takibi, deneme sınav sonuçları, çalışma programı ve ilerleme kayıtları yalnızca cihazınızda yerel olarak saklanır. Bu verilere sunuculardan erişilemez.</p>
+      <h4>2.2. OCR ve Yapay Zeka Kullanımı</h4>
+      <p>Deneme sonucu fotoğrafı/PDF okuma (OCR) ve yapay zeka analiz raporu özelliklerinde Google Gemini altyapısı kullanılmaktadır. İstekler, geliştiricinin aracı sunucusu (proxy) üzerinden Google'a iletilir; kullanıcıdan herhangi bir API anahtarı istenmez. Bu işlemler sırasında yüklediğiniz görüntü ve anonim çalışma/deneme istatistikleriniz Google'ın sunucularına iletilir. <strong>Ad-soyad bilginiz yapay zeka isteklerine dahil edilmez.</strong> Yapay zeka sorguları günlük 10 adet ile sınırlıdır. Gemini gizlilik politikası: policies.google.com/privacy</p>
+      <h4>2.3. Kullanıcı Profili</h4>
+      <p>Uygulama, cihaz içi profil oluşturmak için ad-soyad ister. Bu bilgi <strong>yalnızca cihazınızda</strong> saklanır; hiçbir sunucuya gönderilmez, hesap kaydı veya e-posta doğrulaması yapılmaz.</p>
+      <h4>2.4. Satın Alma Verileri</h4>
+      <p>Premium abonelik ve satın almalar Google Play Faturalandırma sistemi üzerinden gerçekleştirilir. Ödeme bilgileriniz (kart vb.) geliştirici tarafından görülmez ve saklanmaz; tüm ödeme süreci Google Play tarafından yönetilir. Uygulama yalnızca satın almanın aktif olup olmadığı bilgisini tutar.</p>
 
-<p><strong>📁 Dosya Erişimi</strong></p>
-<p>PDF deneme sonuçlarını yüklemek ve veri yedekleme dosyalarını kaydetmek/geri yüklemek için kullanılır. Yüklenen dosyalar yalnızca uygulama içinde işlenir.</p>
+      <h3>3. Veri Paylaşımı</h3>
+      <p>Kişisel verileriniz hiçbir üçüncü tarafla ticari amaçla paylaşılmaz, satılmaz veya kiralanmaz. Gemini'ye gönderilen içerikler yalnızca yapay zeka işleme amaçlıdır ve Google'ın veri işleme politikasına tabidir. Google Play Faturalandırma yalnızca satın alma işlevleri, Google AdMob yalnızca ücretsiz sürümde reklam gösterimi için kullanılır.</p>
 
-<p><strong>🌐 İnternet Erişimi</strong></p>
-<p>Yalnızca aşağıdaki amaçlarla kullanılır:</p>
-<ul>
-<li>Yapay zeka analiz raporu oluşturma (Google Gemini API)</li>
-<li>PDF/fotoğraf içeriğini otomatik okuma (Google Gemini API)</li>
-</ul>
-<p>İnternet erişimi olmadan da uygulamanın temel özellikleri (deneme girişi, konu takibi, çalışma takibi) çalışır.</p>
+      <h3>4. Premium Abonelik ve Ücretsiz Deneme</h3>
+      <p>YKS Koç, temel özellikleri ücretsiz sunar. Yapay zeka analiz, otomatik okuma (OCR) ve günlük mini test özellikleri <strong>3 günlük ücretsiz deneme</strong> süresince serbestçe kullanılır. Deneme süresi bittikten sonra bu özellikler iki şekilde kullanılabilir: <strong>(1)</strong> isteğe bağlı ödüllü reklam izleyerek kullanım hakkı kazanarak (ücretsiz) veya <strong>(2)</strong> Premium üyelikle reklamsız ve sınırsız erişerek. Yapay zeka sorguları her durumda günlük 10 adet ile sınırlıdır.</p>
+      <ul>
+        <li><strong>Aylık plan:</strong> aylık olarak otomatik yenilenir.</li>
+        <li><strong>Yıllık plan:</strong> yıllık olarak otomatik yenilenir.</li>
+        <li><strong>Ömür boyu plan:</strong> tek seferlik ödemedir, yenilenmez.</li>
+        <li>Abonelikler Google Play hesabınız üzerinden yönetilir; <strong>Google Play → Ödemeler ve Abonelikler</strong> bölümünden istediğiniz an iptal edebilirsiniz.</li>
+        <li>İptal, mevcut fatura döneminin sonunda geçerli olur; kısmi iade Google Play iade politikasına tabidir.</li>
+        <li>Satın almalar Google hesabınıza bağlıdır; cihaz değişiminde "Satın Alımları Geri Yükle" ile premium hakkınız korunur.</li>
+      </ul>
 
-<h2>4. Üçüncü Taraf Hizmetler</h2>
-<p>YKS Koç, isteğe bağlı olarak <strong>Google Gemini API</strong> hizmetini kullanır. Bu hizmet kullanıcının kendi API anahtarı ile çalışır. Google'ın gizlilik politikası için: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+      <h3>5. Reklamlar (Ücretsiz Sürüm)</h3>
+      <p>Ücretsiz sürümde Google AdMob altyapısıyla reklam gösterilir:</p>
+      <ul>
+        <li><strong>Banner reklam:</strong> ekranın altında görüntülenir.</li>
+        <li><strong>Ödüllü reklam:</strong> yalnızca kullanıcının isteğiyle başlatılır; izlenmesi karşılığında YZ analiz, otomatik okuma veya günlük mini test gibi özellikler açılır. Zorunlu reklam izletilmez.</li>
+        <li>AdMob, reklamları kişiselleştirmek amacıyla cihazın reklam kimliğini (Advertising ID) kullanabilir. Tercihler: Android Ayarlar → Google → Reklamlar.</li>
+        <li><strong>Premium üyelik tüm reklamları kaldırır.</strong></li>
+      </ul>
 
-<p>Gemini API'ye gönderilen veriler:</p>
-<ul>
-<li>YZ analiz raporu için: Anonim çalışma istatistikleri (ad/soyad dahil değildir)</li>
-<li>PDF/fotoğraf okuma için: Yüklenen belge içeriği (yalnızca sonuçları çıkarmak amacıyla)</li>
-</ul>
+      <h3>6. Veri Güvenliği</h3>
+      <p>Tüm yerel veriler Android'in uygulama korumalı depolama alanında saklanır. API çağrıları HTTPS/TLS ile şifrelenerek iletilir.</p>
 
-<div class="highlight">
-Gemini API kullanımı tamamen isteğe bağlıdır. API anahtarı girmezseniz bu özellikler devre dışı kalır ve hiçbir veri dışarı gönderilmez.
-</div>
+      <h3>7. Haklarınız</h3>
+      <p>Uygulama verilerinizi uygulama içinden Ayarlar → Tüm Verilerimi Sil yoluyla veya cihazınızın Ayarlar → Uygulamalar → YKS Koç → Veri Temizle yoluyla silebilirsiniz. KVKK talepleriniz için mecinar27@gmail.com adresine başvurabilirsiniz. Başvurular 30 gün içinde yanıtlanır.</p>
 
-<h2>5. Veri Güvenliği</h2>
-<ul>
-<li>Tüm veriler cihazın yerel depolamasında (localStorage) saklanır</li>
-<li>Hiçbir veri harici sunuculara gönderilmez veya saklanmaz</li>
-<li>API çağrıları HTTPS üzerinden şifreli olarak yapılır</li>
-<li>Kullanıcı istediği zaman tüm verilerini silebilir (Ayarlar → Veri Yönetimi)</li>
-<li>Veri yedekleme/geri yükleme tamamen kullanıcı kontrolündedir</li>
-</ul>
+      <div class="contact-box">
+        Sorularınız için: <strong>mecinar27@gmail.com</strong>
+      </div>
+    </div>
+  </div>
 
-<h2>6. Çocukların Gizliliği</h2>
-<p>YKS Koç, 13 yaş ve üzeri öğrencilere yöneliktir. 13 yaşından küçük çocuklardan bilerek kişisel bilgi toplamayız. Uygulama zaten herhangi bir kişisel bilgiyi sunucuya göndermemektedir.</p>
+  <!-- KVKK -->
+  <div class="section" id="kvkk">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>📋 KVKK Aydınlatma Metni</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">6698 Sayılı Kişisel Verilerin Korunması Kanunu Uyarınca | Son Güncelleme: 6 Eylül 2026</div>
 
-<h2>7. Reklam ve Analitik</h2>
-<p>YKS Koç:</p>
-<ul>
-<li>Analitik veya izleme aracı kullanmaz</li>
-<li>Kullanıcı davranışlarını takip etmez</li>
-<li>Üçüncü taraflarla veri paylaşmaz</li>
-</ul>
+      <h3>Veri Sorumlusu</h3>
+      <p><strong>Unvan:</strong> mecinar27 (Bağımsız Geliştirici)<br>
+      <strong>E-posta:</strong> mecinar27@gmail.com<br>
+      <strong>Konum:</strong> Gaziantep, Türkiye</p>
 
-<h2>8. Kullanıcı Hakları</h2>
-<p>Kullanıcılar aşağıdaki haklara sahiptir:</p>
-<ul>
-<li><strong>Veri silme:</strong> Ayarlar → "Tüm Verilerimi Sil" ile tüm veriler silinir</li>
-<li><strong>Veri taşıma:</strong> Ayarlar → "Yedekle" ile veriler dışa aktarılabilir</li>
-<li><strong>Erişimi kaldırma:</strong> Uygulamayı kaldırmak tüm verileri siler</li>
-</ul>
+      <h3>İşlenen Kişisel Veriler</h3>
+      <table>
+        <tr>
+          <th>Veri Kategorisi</th>
+          <th>İşlenen Veriler</th>
+          <th>Hukuki Sebep</th>
+          <th>Saklama Süresi</th>
+        </tr>
+        <tr>
+          <td>Sınav Verileri</td>
+          <td>Konu takibi, deneme sonuçları, puan tahmini</td>
+          <td>Sözleşmenin İfası</td>
+          <td>Uygulama kaldırılana kadar cihazda</td>
+        </tr>
+        <tr>
+          <td>AI İçeriği</td>
+          <td>Yüklenen deneme sonucu görselleri, anonim çalışma istatistikleri (Gemini)</td>
+          <td>Açık Rıza</td>
+          <td>Google'ın politikasına tabi; yerel kopya yoktur</td>
+        </tr>
+        <tr>
+          <td>Profil Verisi</td>
+          <td>Ad-soyad (yalnızca cihaz içi profil için)</td>
+          <td>Sözleşmenin İfası</td>
+          <td>Cihazda – kullanıcı silinceye kadar; sunucuya gönderilmez</td>
+        </tr>
+        <tr>
+          <td>Satın Alma Verisi</td>
+          <td>Abonelik/satın alma durumu (Google Play Faturalandırma)</td>
+          <td>Sözleşmenin İfası</td>
+          <td>Google Play politikasına tabi; ödeme bilgisi geliştiriciye ulaşmaz</td>
+        </tr>
+        <tr>
+          <td>Reklam Verisi</td>
+          <td>Reklam kimliği (Advertising ID), reklam etkileşimi (AdMob — yalnızca ücretsiz sürüm)</td>
+          <td>Meşru Menfaat / Açık Rıza</td>
+          <td>Google AdMob politikasına tabi; Premium'da reklam gösterilmez</td>
+        </tr>
+      </table>
 
-<h2>9. Değişiklikler</h2>
-<p>Bu gizlilik politikası güncellenebilir. Önemli değişiklikler uygulama içinde bildirilecektir.</p>
+      <h3>KVKK Kapsamındaki Haklarınız</h3>
+      <ul>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+        <li>İşlenmişse bilgi talep etme</li>
+        <li>Yanlış işlenmişse düzeltilmesini isteme</li>
+        <li>Koşullar oluştuğunda silinmesini talep etme</li>
+        <li>İşlemeye itiraz etme</li>
+        <li>Zararın giderilmesini talep etme</li>
+      </ul>
 
-<h2>10. İletişim</h2>
-<p>Gizlilik ile ilgili sorularınız için:</p>
-<p>📧 E-posta: <a href="mailto:mecinar27@gmail.com">mecinar27@gmail.com</a></p>
+      <h3>Yurt Dışı Veri Aktarımı</h3>
+      <p>Gemini API kullanımı kapsamında veriler Google LLC (ABD) sunucularında işlenebilir. Bu aktarım KVKK'nın 9. maddesi kapsamında uygun güvenlik önlemleri alınarak gerçekleştirilir.</p>
 
-<div class="footer">
-<p>YKS Koç © 2026 — Tüm hakları saklıdır.</p>
-<p>Bu gizlilik politikası 10 Nisan 2026 tarihinde yayınlanmıştır.</p>
-</div>
+      <h3>Başvuru Yöntemi</h3>
+      <p>Haklarınızı kullanmak için <strong>mecinar27@gmail.com</strong> adresine başvurabilirsiniz. Başvurular 30 gün içinde ücretsiz yanıtlanır.</p>
+    </div>
+  </div>
 
-</div>
+  <!-- KULLANIM ŞARTLARI -->
+  <div class="section" id="kullanim">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>📄 Kullanım Şartları</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">Son Güncelleme: 6 Eylül 2026</div>
+
+      <h3>1. Taraflar ve Kapsam</h3>
+      <p>Bu kullanım şartları, <strong>YKS Koç</strong> uygulamasını sunan mecinar27 (Geliştirici) ile uygulamayı kullanan kişi (Kullanıcı) arasında geçerlidir. Uygulamayı indirerek bu şartları kabul etmiş sayılırsınız.</p>
+
+      <h3>2. Uygulamanın Amacı</h3>
+      <p>YKS Koç; YKS sınavına hazırlanan öğrencilere konu takibi, deneme analizi, AI destekli koçluk raporu ve çalışma planı özellikleri sunan bir yardımcı araçtır. Temel özellikler ücretsizdir; yapay zeka analiz, otomatik okuma (OCR) ve günlük mini test özellikleri 3 günlük ücretsiz denemenin ardından Premium üyelik gerektirir.</p>
+
+      <h3>3. Yapay Zeka ve Sınav Sonuçları</h3>
+      <div class="warning-box">
+        ⚠️ YKS Koç tarafından üretilen AI raporları, puan tahminleri ve koçluk önerileri yalnızca yardımcı bilgi niteliğindedir. Kesin sınav sonuçlarını garanti etmez. Uygulama sonuçlarına dayanarak alınan kararların sorumluluğu kullanıcıya aittir.
+      </div>
+
+      <h3>4. Premium Üyelik, Ödeme ve İptal</h3>
+      <ul>
+        <li>Premium planlar (aylık, yıllık, ömür boyu) Google Play Faturalandırma üzerinden satın alınır; fiyatlar satın alma ekranında gösterilir.</li>
+        <li>Aylık ve yıllık planlar, iptal edilmediği sürece dönem sonunda otomatik yenilenir. Ömür boyu plan tek seferlik ödemedir.</li>
+        <li>İptal işlemi Google Play → Ödemeler ve Abonelikler bölümünden yapılır; iptal mevcut dönemin sonunda geçerli olur.</li>
+        <li>İadeler Google Play iade politikasına tabidir.</li>
+        <li>Yapay zeka sorguları, plan türünden bağımsız olarak günlük 10 adet ile sınırlıdır; bu limit hizmetin sürdürülebilirliği için uygulanır ve değiştirilebilir.</li>
+      </ul>
+
+      <h3>5. Yapay Zeka Altyapısı</h3>
+      <p>AI özellikleri, geliştiricinin aracı sunucusu üzerinden Google Gemini altyapısını kullanır. Kullanıcıdan API anahtarı istenmez. Hizmet, Google altyapısındaki kesinti veya değişikliklerden etkilenebilir; geliştirici kesintisiz hizmet garantisi vermez.</p>
+
+      <h3>6. Kullanım Koşulları</h3>
+      <ul>
+        <li>Uygulama yalnızca kişisel ve eğitim amaçlı kullanılabilir.</li>
+        <li>Ticari lisans olmaksızın içerik kopyalanamaz veya dağıtılamaz.</li>
+        <li>Uygulamanın tersine mühendislik ile çözülmesi yasaktır.</li>
+      </ul>
+
+      <h3>7. Sorumluluk Sınırları</h3>
+      <p>Uygulama "olduğu gibi" sunulmaktadır. OCR hataları, API kesintileri veya yanlış puan/sıralama tahminlerinden doğan zararlardan geliştirici sorumlu tutulamaz.</p>
+
+      <h3>8. Fikri Mülkiyet</h3>
+      <p>YKS Koç'un tüm tasarım ve yazılım bileşenleri mecinar27'ye aittir. Sınav soruları ve müfredat bilgileri kamu kaynaklarından derlenmiştir.</p>
+
+      <h3>9. Uygulanacak Hukuk</h3>
+      <p>Bu şartlar Türk Hukuku'na tabidir. Uyuşmazlıklarda Gaziantep mahkemeleri ve tüketici hakem heyetleri yetkilidir.</p>
+
+      <div class="contact-box">
+        İletişim: <strong>mecinar27@gmail.com</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAKİP TEKNOLOJİLERİ -->
+  <div class="section" id="takip">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>📡 Takip Teknolojileri Politikası</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">Son Güncelleme: 6 Eylül 2026</div>
+
+      <h3>Kullanılan Teknolojiler</h3>
+      <p>YKS Koç; reklam için Google AdMob, ödemeler için Google Play Faturalandırma ve yapay zeka için Google Gemini kullanır. Analitik izleme veya kullanıcı profilleme amacıyla başka bir SDK kullanılmaz.</p>
+
+      <h4>Harici Servis 1: Google AdMob (yalnızca ücretsiz sürüm)</h4>
+      <p>Banner ve ödüllü reklamların gösterimi için kullanılır. AdMob, reklam kişiselleştirmesi amacıyla cihazın Advertising ID'sini kullanabilir. Ödüllü reklamlar yalnızca kullanıcının isteğiyle başlatılır. Premium üyelikte reklam gösterilmez. Tercih yönetimi: Ayarlar → Google → Reklamlar.</p>
+
+      <h4>Harici Servis 2: Google Play Faturalandırma</h4>
+      <p>Premium abonelik ve satın almaların işlenmesi için kullanılır. Ödeme süreci tamamen Google Play tarafından yürütülür; geliştirici ödeme bilgilerine erişemez. Satın alma durumu Google hesabınıza bağlıdır.</p>
+
+      <h4>Harici Servis 3: Google Gemini (geliştirici proxy'si üzerinden)</h4>
+      <p>OCR ve AI koçluk özellikleri için Gemini altyapısı kullanılır. Çağrılar sırasında yüklenen görüntü ve anonim istatistik içerikleri Google sunucularına iletilir; ad-soyad gönderilmez. İşleme süreci Google'ın gizlilik politikasına tabidir.</p>
+
+      <h3>Yerel Depolama</h3>
+      <p>Tüm sınav verileri, konu takibi ve ayarlar cihaz içi uygulama depolamasında tutulur. Bulut senkronizasyonu yapılmaz.</p>
+
+      <h3>Kamera ve Galeri</h3>
+      <p>OCR özelliği için kamera ve galeri izni istenir. Çekilen fotoğraflar yalnızca metin çıkarma (OCR) işlemi için Gemini API'ye iletilir; cihazda veya sunucularda ayrıca saklanmaz.</p>
+
+      <h3>Bildirimler</h3>
+      <p>Uygulama, çalışma hatırlatıcısı ve seri (streak) kaybetme uyarısı gönderebilmek için bildirim izni ister. Bildirimler <strong>tamamen cihaz üzerinde</strong> oluşturulur ve zamanlanır; sunucudan gönderilmez (push bildirim kullanılmaz). Bildirim içerikleri hiçbir yere iletilmez, üçüncü taraflarla paylaşılmaz.</p>
+      <ul>
+        <li><strong>Bildirim izni:</strong> hatırlatıcı ve seri uyarısı için kullanılır; reddedilebilir, uygulama izinsiz de çalışır.</li>
+        <li><strong>Alarm/zamanlama izni:</strong> hatırlatıcının seçtiğiniz saatte çalışması için gereklidir.</li>
+        <li><strong>Cihaz açılışı izni:</strong> telefon yeniden başlatıldığında kurulu hatırlatıcıların korunmasını sağlar.</li>
+      </ul>
+
+      <h3>Sonuç Paylaşımı</h3>
+      <p>Deneme ve mini test sonuçlarınızı paylaşma özelliği yalnızca sizin isteğinizle çalışır. Paylaşım, cihazın kendi paylaşım menüsü üzerinden yapılır; içerik geliştiriciye veya herhangi bir sunucuya gönderilmez, kayıt altına alınmaz.</p>
+
+      <h3>Kontrol ve Tercihler</h3>
+      <ul>
+        <li>Kamera izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç</li>
+        <li>Depolama izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç</li>
+        <li>Bildirim izni: Cihaz Ayarları → Uygulama İzinleri → YKS Koç → Bildirimler</li>
+        <li>Hatırlatıcıyı kapatma: Uygulama içi Ayarlar → 🔕 Hatırlatıcıyı Kapat</li>
+        <li>Tüm uygulama verisi: Ayarlar → Uygulama Yönetimi → Veri Temizle</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- VERİ İHLALİ -->
+  <div class="section" id="ihlal">
+    <div class="section-header" onclick="toggle(this)">
+      <h2>🛡️ Veri İhlali Bildirimi</h2>
+      <span class="arrow">▾</span>
+    </div>
+    <div class="section-body">
+      <div class="meta">Son Güncelleme: 6 Eylül 2026</div>
+
+      <h3>Risk Değerlendirmesi</h3>
+      <p>YKS Koç sunucu tabanlı kullanıcı verisi barındırmadığından, geleneksel anlamda sunucu taraflı veri ihlali riski yoktur. Kullanıcı verileri tamamen cihazda yerel olarak saklanır.</p>
+
+      <h3>Olası Riskler</h3>
+      <ul>
+        <li>Cihaza fiziksel yetkisiz erişim</li>
+        <li>Gemini altyapısı üzerinden Google kaynaklı veri ihlali</li>
+        <li>Google Play Faturalandırma altyapısında Google kaynaklı bir güvenlik olayı</li>
+      </ul>
+
+      <h3>Bildirim Süreci</h3>
+      <p>Bir ihlal tespit edilmesi durumunda etkilenen kullanıcılar mümkün olan en kısa sürede bilgilendirilir, KVKK'ya gerekli sürede bildirim yapılır ve güvenlik güncellemesi yayınlanır.</p>
+
+      <h3>Güvenlik Bildirimi</h3>
+      <div class="contact-box">
+        <strong>Güvenlik Açığı Bildirimi:</strong> mecinar27@gmail.com<br>
+        Konu: Güvenlik Açığı – YKS Koç<br>
+        Yanıt süresi: 48 saat
+      </div>
+
+      <h3>KVKK İletişim</h3>
+      <div class="contact-box">
+        <strong>Kişisel Verileri Koruma Kurumu</strong><br>
+        Necatibey Cad. No:114 Sıhhiye/Çankaya/ANKARA<br>
+        Tel: +90 312 967 88 00 | Web: www.kvkk.gov.tr
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 mecinar27. Tüm hakları saklıdır.</p>
+  <p style="margin-top:6px">Bu belgeler YKS Koç uygulaması için geçerlidir.</p>
+  <p style="margin-top:6px">İletişim: mecinar27@gmail.com</p>
+</footer>
+
+<script>
+  function toggle(header) {
+    header.classList.toggle('open');
+    const body = header.nextElementSibling;
+    body.classList.toggle('open');
+  }
+  document.querySelectorAll('.section-body').forEach((b, i) => {
+    if (i === 0) b.classList.add('open');
+  });
+</script>
 </body>
 </html>
